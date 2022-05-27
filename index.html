@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/beautiful__modern/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
-    <script src="/beautiful__modern/js/scroll.js" defer></script>
-    <script src="/beautiful__modern/js/header&burger.js" defer></script>
-    <script src="/beautiful__modern/js/anim__items__scroll.js" defer></script>
-    <script src="/beautiful__modern/js/back__to__top.js" defer></script>
-    <script src="/beautiful__modern/js/popup.js" defer></script>
+    <script src="/beautiful__modernjs/scroll.js" defer></script>
+    <script src="/beautiful__modernjs/header&burger.js" defer></script>
+    <script src="/beautiful__modernjs/anim__items__scroll.js" defer></script>
+    <script src="/beautiful__modernjs/back__to__top.js" defer></script>
+    <script src="/beautiful__modernjs/popup.js" defer></script>
+    <script src="/beautiful__modernjs/tabs.js" defer></script>
+    <script src="/beautiful__modernjs/slider.js" defer></script>
+    
     <title>Metamorfosi</title>
 </head>
 
@@ -154,7 +157,177 @@
     </header>
 
     <main>
+<!------------------------------------
+-------------PARTNERS-----------------    
+------------------------------------->        
+        <section> 
+            <div class="bg__our__partners">
+
+                <h2 class="header__text">Our Partners</h2>
+
+                <div class="wrapper__our__partners">
+                    <div class="about__partners" id="tab_1">
+                        <div class="partner" id="partner">
+                            <img src="img/parnters/unsplash_k6aQzmIbR1s.png" alt="">
+
+                            <div class="name__and__prof">
+                                <p class="name">Tom Dou</p>
+                                <p class="profession">Back-End</p>
+                            </div>
+                        </div>
+                        
+                        <p class="about">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium.”</p>
+                    </div>
+
+                    <div class="about__partners" id="tab_2">
+                        <div class="partner">
+                            <img src="img/parnters/ins.jpg" alt="">
+
+                            <div class="name__and__prof">
+                                <p class="name">Danila Savenko</p>
+                                <p class="profession">Front-End</p>
+                            </div>
+                        </div>
+                        
+                        <p class="about">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium.”</p>
+                    </div>
+
+                    <div class="about__partners" id="tab_3">
+                        <div class="partner">
+                            <img src="img/parnters/depositphotos_297175220-stock-photo-portrait-of-handsome-happy-man.jpg" alt="">
+
+                            <div class="name__and__prof">
+                                <p class="name">Nick Thomson</p>
+                                <p class="profession">Full-Stack</p>
+                            </div>
+                        </div>
+                        
+                        <p class="about">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium.”</p>
+                    </div>
+
+                    <div class="about__partners" id="tab_4">
+                        <div class="partner">
+                            <img src="img/parnters/jack-nicholson-about-schmidt.jpg" alt="">
+
+                            <div class="name__and__prof">
+                                <p class="name">Jack Nicholson</p>
+                                <p class="profession">Designer</p>
+                            </div>
+                        </div>
+                        
+                        <p class="about">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium.”</p>
+                    </div>
+
+                    <div class="about__partners" id="tab_5">
+                        <div class="partner">
+                            <img src="img/parnters/WB2OoUBT71r9mOicMhzmAQ-small.jpg" alt="">
+
+                            <div class="name__and__prof">
+                                <p class="name">Heath Ledger</p>
+                                <p class="profession">Good actor</p>
+                            </div>
+                        </div>
+                        
+                        <p class="about">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium.”</p>
+                    </div>
+
+                    <div class="about__partners" id="tab_6">
+                        <div class="partner">
+                            <img src="img/parnters/1336.700xp.jpg" alt="">
+
+                            <div class="name__and__prof">
+                                <p class="name">Christian Bale</p>
+                                <p class="profession">Game designer</p>
+                            </div>
+                        </div>
+                        
+                        <p class="about">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium.”</p>
+                    </div>
+
+                    <div class="our__parnters">
+                        <div class="block__partner"  data-tab="#tab_1">
+                            <img src="img/parnters/image 58.png" alt="">
+                            <span></span> 
+                        </div>
+
+                        <div class="block__partner" data-tab="#tab_2">
+                            <img src="img/parnters/image 59.png" alt=""> 
+                            <span></span>
+                        </div>
+
+                        <div class="block__partner" data-tab="#tab_3">
+                            <img class="img" src="img/parnters/image 60.png" alt=""> 
+                            <span></span>
+                        </div>
+
+                        <div class="block__partner" data-tab="#tab_4">
+                            <img src="img/parnters/image 61.png" alt="">
+                            <span></span> 
+                        </div>
+
+                        <div class="block__partner" data-tab="#tab_5">
+                            <img src="img/parnters/image 62.png" alt="">
+                            <span></span> 
+                        </div>
+
+                        <div class="block__partner" data-tab="#tab_6">
+                            <img src="img/parnters/image 63.png" alt="">
+                            <span></span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!------------------------------------
+--------------OUR TEAM----------------    
+-------------------------------------> 
+        <section>
+            <div class="block__our__team">
+                <div class="wrapper__our__team">
+                    <h2 class="header__text">Our Team</h2>
+
+                    <div class="svg__triangle">
+                        <svg width="155" height="155" viewBox="0 0 155 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M119.742 3.12158L77.2439 45.6061L34.7593 3.12158L3.04785 34.8331L45.5324 77.3175L3.04785 119.802L34.7593 151.527L77.2439 109.029L119.742 151.527L151.453 119.816L108.955 77.3175L151.453 34.8331L119.742 3.12158Z" stroke="#FF0B53" stroke-width="4" stroke-miterlimit="10"/>
+                        </svg>
+    
+                        <svg width="155" height="155" viewBox="0 0 155 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M119.742 3.12158L77.2439 45.6061L34.7593 3.12158L3.04785 34.8331L45.5324 77.3175L3.04785 119.802L34.7593 151.527L77.2439 109.029L119.742 151.527L151.453 119.816L108.955 77.3175L151.453 34.8331L119.742 3.12158Z" stroke="#FF0B53" stroke-width="4" stroke-miterlimit="10"/>
+                        </svg>      
+                    </div>
+    
+                    <div class="about__and__slider">
+                        <div class="about">
+                            <p class="top__text">About</p>
+    
+                            <p class="bottom__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam ac sed eget. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Fusce nullam ac sed eget. Dui in eget a tristique. 
+                            </p>
+                        </div>
+                        
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/team/unsplash_Y7C7F26fzZM.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/team/unsplash_YUu9UAcOKZ4.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/team/unsplash_Y7C7F26fzZM.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/team/unsplash_YUu9UAcOKZ4.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/team/unsplash_Y7C7F26fzZM.jpg" alt=""></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                    <div class="bg__our__team"></div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,145 @@
+.block__our__team {
+    width: 100%;
+    height: auto;
+    padding: 120px 0 230px 0;
+
+    position: relative;
+
+    .wrapper__our__team {
+        max-width: 1780px;
+        margin: 0 auto;
+        .header__text {
+            font-weight: 700;
+            font-size: 3.375rem;
+            line-height: 62px;
+    
+            color: #101020;
+
+            margin-bottom: 210px;
+        }
+    
+        .svg__triangle {
+            transform: rotate(-15deg);
+            display: inline-block;
+            
+            svg {
+                &:nth-child(1) {
+                    position: absolute;
+                    top: 362px;
+                    left: -44px;
+                   
+                }
+
+                &:nth-child(2) {
+                    position: absolute;
+                    top: 163px;
+                    left: 1374px;
+                   
+                }
+            }
+        }
+    
+        .about__and__slider {
+            display: flex;
+            gap: 20px;
+         
+            .about {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                .top__text {
+                    font-weight: 500;
+                    font-size: 2.125rem;
+                    line-height: 39px;
+    
+                    color: #101020;
+                    
+                }
+    
+                .bottom__text {
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    line-height: 147%;
+                    
+                    color: #3D3D3D;
+
+                    max-width: 1552px;
+                    
+                }
+            }
+
+            .swiper-pagination {
+                background: #676767;
+                width: 1028px;
+                bottom: 141px;
+                top: unset;
+                right: 353px;
+                left: unset;
+                height: 1px;
+
+                .swiper-pagination-progressbar-fill {
+                    background: #17191D;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 2px;
+
+                    height: 7px;
+
+                    top: -3px;
+                }
+            }
+
+            .swiper-button-next {
+                border-radius: 50%;
+                background: #F8F8F8;
+                border: 1px solid #DEDEDE;
+                width: 50px;
+                height: 50px;
+                background: url(/img/team/right.svg) no-repeat center;
+                top: 837px;
+                right: 54px;
+                transition: .3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                    border: 1px solid rgb(255, 11, 83);
+                    
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            .swiper-button-prev {
+                border-radius: 50%;
+                background: #F8F8F8;
+                border: 1px solid #DEDEDE;
+                width: 50px;
+                height: 50px;
+                background: url(/img/team/left.svg) no-repeat center;
+                top: 837px;
+                right: 125px;
+                left: unset;
+                transition: .3s ease;
+                &:hover {
+                    transform: scale(1.1);
+                    border: 1px solid rgb(255, 11, 83);
+                    
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        .bg__our__team {
+            width: 1182px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(90deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 107.87%);
+            z-index: -1;
+        }
+    }
+}
