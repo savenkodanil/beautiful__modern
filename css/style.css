@@ -1,6 +1,12 @@
 @charset "UTF-8";
-html, body {
-  font-family: "Ubuntu";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Ubuntu ", sans-serif;
   font-style: normal;
   font-size: 16px;
   scroll-behavior: inherit;
@@ -11,6 +17,27 @@ a {
   color: #000;
 }
 
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/beautiful__modern/fonts/Ubuntu-Light.ttf) format("truetype");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/beautiful__modern/fonts/Ubuntu-Regular.ttf) format("truetype");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/beautiful__modern/fonts/Ubuntu-Bold.ttf) format("truetype");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -83,6 +110,9 @@ body.open {
   display: flex;
   gap: 30px;
 }
+.bg__entire__block .bg__header .header__wrapper .header__menu__nav .ul__menu__nav li:nth-child(4) .nav__menu::before {
+  width: 100%;
+}
 .bg__entire__block .bg__header .header__wrapper .header__menu__nav .ul__menu__nav .nav__menu {
   font-weight: 400;
   font-size: 1rem;
@@ -102,6 +132,9 @@ body.open {
   position: absolute;
   -webkit-transition: width 0.2s ease;
   transition: width 0.2s ease;
+}
+.bg__entire__block .bg__header .header__wrapper .header__menu__nav .ul__menu__nav .nav__menu:nth-child(4)::before {
+  width: 100%;
 }
 .bg__entire__block .bg__header .header__wrapper .header__menu__nav .ul__menu__nav .nav__menu:hover::before {
   width: 100%;
@@ -266,16 +299,11 @@ body.open {
 }
 .bg__entire__block .block__info .btn__start__read .anim__btn .btn__start {
   border-radius: 36px;
-  border: 1px solid #FFFFFF;
-  background: rgba(88, 82, 82, 0);
+  background: #FF0B53;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   cursor: pointer;
   width: 284px;
-}
-.bg__entire__block .block__info .btn__start__read .anim__btn .btn__start:hover {
-  background: #FF0B53;
-  border: 1px solid #FF0B53;
 }
 .bg__entire__block .block__info .btn__start__read .anim__btn .btn__start p {
   padding: 18px 45px;
@@ -987,8 +1015,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font-family: "Ubuntu";
   font-style: normal;
   vertical-align: baseline;
 }
@@ -1019,14 +1045,6 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .bg__our__partners {
@@ -1293,6 +1311,16 @@ table {
     height: auto;
   }
 }
+@media (max-width: 470px) {
+  .bg__our__partners .header__text {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 416px) {
+  .bg__our__partners .header__text {
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 400px) {
   .bg__our__partners {
     padding: 50px 0;
@@ -1368,7 +1396,7 @@ table {
   gap: 18px;
 }
 .block__our__team .wrapper__our__team .about__and__slider .about .top__text {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 2.125rem;
   line-height: 39px;
   color: #101020;
@@ -1498,7 +1526,6 @@ table {
   border: 1px solid #DEDEDE;
   width: 50px;
   height: 50px;
-  background: url(right.svg) no-repeat center;
   top: 420px;
   right: 13px;
   -webkit-transition: 0.3s ease;
@@ -1509,16 +1536,40 @@ table {
           transform: scale(1.1);
   border: 1px solid rgb(255, 11, 83);
 }
+.block__our__team .wrapper__our__team .about__and__slider .swiper-button-next svg {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-animation: right 1s ease-in-out infinite alternate;
+          animation: right 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes right {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+}
+@keyframes right {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+}
 .block__our__team .wrapper__our__team .about__and__slider .swiper-button-next::after {
   display: none;
 }
 .block__our__team .wrapper__our__team .about__and__slider .swiper-button-prev {
   border-radius: 50%;
-  background: #F8F8F8;
   border: 1px solid #DEDEDE;
   width: 50px;
   height: 50px;
-  background: url(left.svg) no-repeat center;
   top: 420px;
   right: 87px;
   left: unset;
@@ -1529,9 +1580,34 @@ table {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   border: 1px solid rgb(255, 11, 83);
+  background: #F8F8F8;
 }
 .block__our__team .wrapper__our__team .about__and__slider .swiper-button-prev::after {
   display: none;
+}
+.block__our__team .wrapper__our__team .about__and__slider .swiper-button-prev svg {
+  -webkit-animation: left 1s ease-in-out infinite alternate;
+          animation: left 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes left {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+}
+@keyframes left {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
 }
 .block__our__team .wrapper__our__team .bg__our__team {
   width: 1182px;
@@ -1683,7 +1759,7 @@ table {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 416px) {
   .block__our__team {
     padding: 50px 0 100px 0;
   }
@@ -2540,6 +2616,7 @@ body.active {
   }
   .bg__contact__us .wrapper__contact__us .header__text__contact {
     margin-bottom: 60px;
+    font-size: 2rem;
   }
   .bg__contact__us .wrapper__contact__us .btn__cv__submit .btn__cv {
     width: 100%;
@@ -2766,11 +2843,12 @@ input[type=number]:focus {
   height: 2px;
   background: #FF0B53;
 }
-.bg__footer .wrapper__footer .info__footer .contacts p {
+.bg__footer .wrapper__footer .info__footer .contacts a, .bg__footer .wrapper__footer .info__footer .contacts p {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 23px;
   color: #FFFFFF;
+  max-width: 300px;
 }
 .bg__footer .footer__decoration svg {
   position: absolute;
@@ -2820,6 +2898,9 @@ input[type=number]:focus {
   .bg__footer .wrapper__footer .info__footer .top__text {
     font-size: 1.25rem;
     margin-bottom: 20px;
+  }
+  .bg__footer .wrapper__footer .info__footer .top__text::before {
+    width: 89px;
   }
   .bg__footer .wrapper__footer .info__footer .contacts p {
     font-size: 1rem;

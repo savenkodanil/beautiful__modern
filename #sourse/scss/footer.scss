@@ -90,12 +90,14 @@
             }
 
             .contacts {
-                p {
+                a , p {
                     font-weight: 400;
                     font-size: 1.25rem;
                     line-height: 23px;
                     
                     color: #FFFFFF;
+
+                    max-width: 300px;
                      
                 }
             }
@@ -107,7 +109,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            right: 0;
+            right: 15px;
             z-index: 1;
         }
     }
@@ -173,6 +175,9 @@
                 .top__text {
                     font-size: 1.25rem;
                     margin-bottom: 20px;
+                    &::before {
+                        width: 89px;
+                    }
                 }
                 .contacts {
                     p {

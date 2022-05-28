@@ -53,6 +53,14 @@ body.open {
                     display: flex;
                     gap: 30px;
 
+                    li {
+                        &:nth-child(4) {
+                            .nav__menu::before {
+                                width: 100%;
+                            }
+                        }
+                    }
+
                     .nav__menu {
                         font-weight: 400;
                         font-size: 1rem;
@@ -78,6 +86,12 @@ body.open {
                             position: absolute;
 
                             transition: width .2s ease;
+                        }
+
+                        &:nth-child(4) {
+                            &::before {
+                                width: 100%;
+                            }
                         }
 
                         &:hover::before {
@@ -231,18 +245,13 @@ body.open {
                 }
                 .btn__start {
                     border-radius: 36px;
-                    border: 1px solid #FFFFFF;
-                    background: rgb(88, 82, 82 , .0);
+                    
+                    background: #FF0B53;
     
                     transition: .6s ease;
                     cursor: pointer;
     
                     width: 284px;
-    
-                    &:hover {
-                        background: #FF0B53;
-                        border: 1px solid #FF0B53;
-                    }
                    
                     p {
                         padding: 18px 45px;

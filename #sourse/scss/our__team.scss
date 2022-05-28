@@ -54,7 +54,7 @@
                 flex-direction: column;
                 gap: 18px;
                 .top__text {
-                    font-weight: 500;
+                    font-weight: 700;
                     font-size: 2.125rem;
                     line-height: 39px;
     
@@ -91,7 +91,7 @@
 
                                 border-radius: 10px;
                                 &::before {
-                                    background: url(/img/team/unsplash_Y7C7F26fzZM.jpg);
+                                    background: url(unsplash_Y7C7F26fzZM.jpg);
     
                                     width: 430px;
                                     height: 345px;
@@ -221,7 +221,6 @@
                 border: 1px solid #DEDEDE;
                 width: 50px;
                 height: 50px;
-                background: url(/img/team/right.svg) no-repeat center;
                 top: 420px;
                 right: 13px;
                 transition: .3s ease;
@@ -229,7 +228,19 @@
                 &:hover {
                     transform: scale(1.1);
                     border: 1px solid rgb(255, 11, 83);
-                    
+                }
+
+                svg {
+                    transition: 1s ease;
+                    animation: right 1s ease-in-out infinite alternate;
+                }
+                @keyframes right {
+                    0% {
+                        transform: translateX(0px);
+                    }
+                    100% {
+                        transform: translateX(2px);
+                    }
                 }
 
                 &::after {
@@ -239,11 +250,10 @@
 
             .swiper-button-prev {
                 border-radius: 50%;
-                background: #F8F8F8;
+                
                 border: 1px solid #DEDEDE;
                 width: 50px;
                 height: 50px;
-                background: url(/img/team/left.svg) no-repeat center;
                 top: 420px;
                 right: 87px;
                 left: unset;
@@ -251,10 +261,24 @@
                 &:hover {
                     transform: scale(1.1);
                     border: 1px solid rgb(255, 11, 83);
-                    
+                    background: #F8F8F8;
+                
                 }
                 &::after {
                     display: none;
+                }
+
+                svg {
+                    animation: left 1s ease-in-out infinite alternate;
+                }
+
+                @keyframes left {
+                    0% {
+                        transform: translateX(0px);
+                    }
+                    100% {
+                        transform: translateX(-2px);
+                    }
                 }
             }
         }
@@ -472,7 +496,7 @@
     }
 }
 
-@media(max-width:400px) {
+@media(max-width:416px) {
     .block__our__team {
         padding: 50px 0 100px 0;
         .wrapper__our__team {

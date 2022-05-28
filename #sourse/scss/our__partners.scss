@@ -280,6 +280,22 @@
     }
 }
 
+@media(max-width:470px) {
+    .bg__our__partners {
+        .header__text {
+            font-size: 2rem;    
+        }
+    }
+}
+
+@media(max-width:416px) {
+    .bg__our__partners {
+        .header__text {
+            font-size: 1.5rem;    
+        }
+    }
+}
+
 @media(max-width:400px) {
     .bg__our__partners {
         padding: 50px 0;

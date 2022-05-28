@@ -8,13 +8,14 @@ const swiper = new Swiper('.swiper', {
       el: ".swiper-pagination",
       type: "progressbar",
     },
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
 
     autoplay: {
-      delay:4000,
+      delay:7000,
       disableOnInteraction:false
     },
 
