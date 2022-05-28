@@ -1394,7 +1394,7 @@ table {
   border-radius: 10px;
 }
 .block__our__team .wrapper__our__team .about__and__slider .slider .swiper .swiper-wrapper .swiper-slide .content::before {
-  background: url(/img/team/unsplash_Y7C7F26fzZM.jpg);
+  background: url(unsplash_Y7C7F26fzZM.jpg);
   width: 430px;
   height: 345px;
   content: "";
@@ -1498,7 +1498,7 @@ table {
   border: 1px solid #DEDEDE;
   width: 50px;
   height: 50px;
-  background: url(/img/team/right.svg) no-repeat center;
+  background: url(right.svg) no-repeat center;
   top: 420px;
   right: 13px;
   -webkit-transition: 0.3s ease;
@@ -1518,7 +1518,7 @@ table {
   border: 1px solid #DEDEDE;
   width: 50px;
   height: 50px;
-  background: url(/img/team/left.svg) no-repeat center;
+  background: url(left.svg) no-repeat center;
   top: 420px;
   right: 87px;
   left: unset;
