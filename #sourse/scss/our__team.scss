@@ -70,6 +70,122 @@
             .slider {
                 width: 1339px;
                 position: relative;
+
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            .content {
+                                width: 430px;
+                                height: 345px;
+                                overflow: hidden;
+                                position: relative;
+
+                                transition: .4s ease;
+
+                                border-radius: 10px;
+                                &::before {
+                                    background: url(/img/team/unsplash_Y7C7F26fzZM.jpg);
+    
+                                    width: 430px;
+                                    height: 345px;
+    
+                                    content: "";
+                                    position: absolute;
+                                
+                                    background-size: cover;
+                                    background-position: 0 0;
+                                   
+                                    pointer-events: none;
+
+                                    transition: 2s ease;
+                                }
+                                &::after {
+                                    content: '';
+                                    width: 100%;
+                                    height: 100%;
+                                    background: #000;
+
+                                    z-index: 2;
+
+                                    position: absolute;
+                                    opacity: 0;
+                                    transition: .4s ease;
+
+                                }
+
+                                &:hover {
+                                    .info {
+                                        bottom: 50px;
+                                    }
+                                    &::before {
+                                        transform: scale(1.2);
+                                    }
+                                    &::after {
+                                        opacity: .5;
+                                    }
+                                }
+
+                                .info {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 10px;
+
+                                    position: absolute;
+                                    transform: translateX(-50%);
+                                    bottom: -180px;
+                                    left: 50%;
+                                    z-index: 5;
+
+                                    transition: .6s ease;
+                                    .name__developer {
+                                        font-weight: 500;
+                                        font-size: 1.875rem;
+                                        line-height: 34px;
+                                        text-align: center;
+    
+                                        color: #FFFFFF;
+    
+                                    }
+    
+                                    .profession__dev {
+                                        font-weight: 400;
+                                        font-size: 1.5rem;
+                                        line-height: 28px;
+    
+                                        text-align: center;
+    
+                                        color: #F2F2F2;
+    
+                                        
+                                    }
+
+                                    .read__more {
+                                        width: 267px;
+                                        
+                                        background: #FF0B53;
+                                        border-radius: 49px;
+
+                                        margin-top: 20px;
+
+                                        cursor: pointer;
+                                        p {
+                                            font-weight: 400;
+                                            font-size: 1.5rem;
+                                            line-height: 28px;
+
+                                            text-align: center;
+
+                                            color: #FFFFFF;
+
+                                            padding: 18px 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             .swiper-pagination {
@@ -238,6 +354,10 @@
                         height: 100px;
                         width: 100px;
                     }
+
+                    &:nth-child(2) {
+                        right: 30px;
+                    }
                 }
             }
 
@@ -315,10 +435,16 @@
                     width: 365px;
 
                     .swiper {
-                        .swiper-slide {
-                            img {
-                                width: 365px;
-                                height: auto;
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .content {
+                                    width: 365px;
+                                    height: 280px;
+                                    &::before {
+                                        width: 365px;
+                                        height: 280px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -382,10 +508,16 @@
                     width: 335px;
 
                     .swiper {
-                        .swiper-slide {
-                            img {
-                                width: 335px;
-                                height: 268px;
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .content {
+                                    width: 335px;
+                                    height: 268px;
+                                    &::before {
+                                        width: 335px;
+                                        height: 268px;
+                                    }
+                                }
                             }
                         }
                     }
