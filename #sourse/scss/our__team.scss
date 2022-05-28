@@ -5,6 +5,13 @@
 
     position: relative;
 
+    .position {
+        position: absolute;
+        top: -50px;
+        color: blue;
+        opacity: 0;
+    }
+
     .wrapper__our__team {
         max-width: 1780px;
         margin: 0 auto;

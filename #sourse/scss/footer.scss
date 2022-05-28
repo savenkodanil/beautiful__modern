@@ -1,0 +1,195 @@
+.bg__footer {
+    width: 100%;
+    height: auto;
+    background: #17191D;
+    padding: 120px 0 132px 0;
+    position: relative;
+    .wrapper__footer {
+        max-width: 1780px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 5;
+        .header__text__footer {
+            font-weight: 700;
+            font-size: 3.375rem;
+            line-height: 62px;
+            
+            color: #FFFFFF;
+
+            margin-bottom: 90px;
+            
+        }
+
+        .info__footer {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1235px;
+            .office__social {
+                display: flex;
+                flex-direction: column;
+                .gap__contacts {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    .contacts {
+                        display: flex;
+                        gap: 18px;
+                        align-items: center;
+                    }
+                }
+                .gap__social {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 34px;
+                    .social {
+                        display: flex;
+                        gap: 22px;
+
+                        a {
+                          
+                            svg {
+                                transition: 0.3s ease;
+                            }
+                            &:hover {
+                                svg {
+                                    transform: scale(1.2);
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        font-weight: 400;
+                        font-size: 1.1rem;
+                        line-height: 21px;                 
+                        
+                        color: #B1B1B1;   
+                    }
+                }
+            }
+
+            .top__text {
+                font-weight: 700;
+                font-size: 1.875rem;
+                line-height: 34px;
+                
+                color: #FFFFFF;
+
+                margin-bottom: 31px;
+
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 1px;
+                    width: 130px;
+                    height: 2px;
+
+                    background: #FF0B53;
+                }
+            }
+
+            .contacts {
+                p {
+                    font-weight: 400;
+                    font-size: 1.25rem;
+                    line-height: 23px;
+                    
+                    color: #FFFFFF;
+                     
+                }
+            }
+        }
+    }
+
+    .footer__decoration {
+        svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            z-index: 1;
+        }
+    }
+}
+@media(max-width:1779px) {
+    .bg__footer {
+        .wrapper__footer {
+            margin: 0 20px;
+        }
+    }
+}
+
+@media(max-width:1450px) {
+    .bg__footer {
+        .wrapper__footer {
+            
+        }
+        .footer__decoration {
+            svg {
+                transform: rotate(90deg);
+                top: -81px;
+                right: 164px;
+            }
+        }
+    }
+}
+
+@media(max-width:1140px) {
+    .bg__footer {
+        .wrapper__footer {
+            
+        }
+        .footer__decoration {
+            svg {
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width:990px) {
+    .bg__footer {
+        .wrapper__footer {
+            .info__footer {
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .bg__footer {
+        padding: 50px 0;
+        .wrapper__footer {
+            .header__text__footer {
+                font-size: 1.5rem;
+                margin-bottom: 30px;
+            }
+
+            .info__footer {
+                gap: 30px;
+                .top__text {
+                    font-size: 1.25rem;
+                    margin-bottom: 20px;
+                }
+                .contacts {
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+
+                .office__social {
+                    .gap__contacts {
+                        gap: 12px;
+                    }
+                    .gap__social {
+                        gap: 23px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

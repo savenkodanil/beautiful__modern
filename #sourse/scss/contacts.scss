@@ -1,0 +1,459 @@
+.bg__contact__us {
+    background: #F8F8F8;
+    width: 100%;
+    height: 1040px;
+
+    position: relative;
+
+    padding: 120px 0 287px 0;
+
+    overflow: hidden;
+    .wrapper__contact__us {
+        max-width: 1780px;
+        margin: 0 auto;
+        z-index: 2;
+        position: relative;
+
+        .header__text__contact {
+            font-weight: 700;
+            font-size: 3.375rem;
+            line-height: 62px;
+            
+            color: #101020; 
+
+            margin-bottom: 90px;
+        }
+
+        .block__input {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 880px;
+            .input {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                .input__name {
+                    width: 430px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 7px;  
+                    input {
+                        all: unset;
+                        width: 100%;
+                        padding: 20px;
+                        &::placeholder {
+                            font-weight: 300;
+                            font-size: 1.25rem;
+                            line-height: 23px;
+           
+                            
+                            color: #585858; 
+                        }
+                    }                
+                }
+                .input__email {
+                    width: 430px;
+                    
+                    background: #FFFFFF;
+                    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 7px;
+                    input {
+                        all: unset;
+                        width: 100%;
+                        padding: 20px;
+                        &::placeholder {
+                            font-weight: 300;
+                            font-size: 1.25rem;
+                            line-height: 23px;
+           
+                            
+                            color: #585858; 
+                        }
+                    }
+                }
+                .input__number {
+                    width: 430px;
+                   
+                    background: #FFFFFF;
+                    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 7px;
+                    input {
+                        all: unset;
+                        width: 100%;
+                        padding: 20px;
+                        &::placeholder {
+                            font-weight: 300;
+                            font-size: 1.25rem;
+                            line-height: 23px;
+           
+                            
+                            color: #585858; 
+                        }
+                    }
+                }
+                .input__job {
+                    width: 430px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 7px;
+                    position: relative;
+
+                    .more__information {
+                        position: absolute;
+                        width: 25px;
+                        height: 25px;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        margin-right: 28px;
+                        svg {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+
+                            transform: translate(-50% , -50%);
+
+                            animation: more 2s ease-in-out infinite alternate;
+                        }
+                        @keyframes more {
+                            0% {
+                                transform: translateY(-3px);
+                            }
+                            100% {
+                                transform: translateY(0px);
+                            }
+                        }
+                    }
+
+                    input::-webkit-calendar-picker-indicator {
+                        opacity: 0;
+                    }
+
+                    input {
+                        all: unset;
+                        width: 91%;
+                        padding: 20px;
+                        &::placeholder {
+                            font-weight: 300;
+                            font-size: 1.25rem;
+                            line-height: 23px;
+           
+                            
+                            color: #585858; 
+                        }
+                    }
+                }
+            }
+
+            .text__area {
+                textarea {
+                    width: 100%;
+                    height: 222px;
+
+                    background: #FFFFFF;
+                    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 7px;
+                    padding: 20px;
+                    font-weight: 300;
+                    font-size: 1.25rem;
+                    line-height: 23px;
+                    
+                    color: #000000;
+
+                    resize: none;
+
+                    outline: none;
+                        
+                    &::placeholder {
+                        font-weight: 300;
+                        font-size: 1.25rem;
+                        line-height: 23px;
+                        /* identical to box height */
+                        
+                        color: #585858;
+                            
+                    }
+                }
+            }
+        }
+
+        .btn__cv__submit {
+            display: flex;
+            justify-content: space-between;
+
+            max-width: 880px;
+            
+            .btn__cv {
+                all: unset;
+
+                width: 284px;
+                height: auto;
+                padding: 19px 0px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                gap: 12px;
+
+                border: 1px solid #101020;
+                border-radius: 7px;
+
+                margin-top: 34px;
+
+                cursor: pointer;
+
+                svg {
+                    transition: .5s ease;
+                }
+                &:hover {
+                    svg {
+                        transform: translateY(-5px);
+                    }
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 1.25rem;
+                    line-height: 23px;
+                  
+                    
+                    text-align: center;
+                    
+                    color: #101020;  
+                }
+            }
+
+            .btn__submit {
+                all: unset;
+
+                width: 284px;
+                height: auto;
+                padding: 19px 0px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                gap: 12px;
+
+                background: #101020;
+                border-radius: 36px;
+
+                margin-top: 30px;
+
+                cursor: pointer;
+
+                transition: .5s ease;
+                backdrop-filter: blur(30px);
+
+                &:hover {
+                    background: rgb(0, 0, 0 , .7);
+                }
+                
+                p {
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                    line-height: 28px;
+                    
+                    text-align: center;
+                    
+                    color: #FFFFFF;
+                
+                }
+            }
+        }
+    }
+
+    .bg__decoration {
+        svg {
+            &:nth-child(1) {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                margin: 0 0 30px 30px;
+                z-index: 1;
+
+            }
+
+            &:nth-child(2) {
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+@media(max-width:1779px) {
+    .bg__contact__us {
+        .wrapper__contact__us {
+            margin: 0 20px;
+        }
+    }
+}
+
+@media(max-width:1500px) {
+    .bg__contact__us {
+        .wrapper__contact__us {
+            margin: 0 20px;
+        }
+
+        .bg__decoration {
+            svg {
+                &:nth-child(2) {
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:940px) {
+    .bg__contact__us {
+        .wrapper__contact__us {
+            
+        }
+
+        .bg__decoration {
+            svg {
+                &:nth-child(1) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:650px) {
+    .bg__contact__us {
+        padding: 60px 0 0 0;
+        .wrapper__contact__us {
+            .header__text__contact {
+                margin-bottom: 60px;
+            }
+           .btn__cv__submit {
+               flex-direction: column;
+           }
+        }
+
+        .bg__decoration {
+            svg {
+                &:nth-child(2) {
+                    width: 449px;
+                    height: 1083px;
+                    top: 0%;
+                    right: -179px;
+                   
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:475px) {
+    .bg__contact__us {
+        padding: 60px 0 0 0;
+        .wrapper__contact__us {
+            .header__text__contact {
+                margin-bottom: 60px;
+            }
+            .btn__cv__submit {
+                .btn__cv {
+                    width: 100%;
+                }
+                .btn__submit {
+                    margin: 40px auto 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:416px) {
+    .bg__contact__us {
+        padding: 50px 0 0 0;
+        .wrapper__contact__us {
+            .header__text__contact {
+                margin-bottom: 22px;
+
+                font-size: 1.5rem;
+            }
+
+            .block__input {
+                .input {
+                    .input__name {
+                        input {
+                            &::placeholder {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    .input__email {
+                        input {
+                            &::placeholder {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    .input__number {
+                        input {
+                            &::placeholder {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    .numb {
+                        input {
+                            &::placeholder {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    .input__job {
+                        input {
+                            &::placeholder {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+                .text__area {
+                    textarea {
+                        &::placeholder {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .btn__cv__submit {
+                .btn__cv {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}

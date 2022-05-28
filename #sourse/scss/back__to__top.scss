@@ -1,0 +1,75 @@
+/***************************
+*****BUTTON-BACK-TO-TOP*****
+***************************/
+#toTop {
+    display: none;
+}
+.button__to__top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+
+    width: 50px;
+    height: 50px;
+
+    border-color: transparent;
+    border-radius: 20%;
+
+    background: rgb(255, 11, 83 , .8);
+
+    opacity: 0.9;
+
+    cursor: pointer;
+
+    transition: .5s ease;
+
+    z-index: 1000;
+
+    &.active {
+        display: none;
+    }
+
+    .arrow-svg {
+        width: 30px;
+        height: 30px;
+    
+        fill: #DFE9F4;
+    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    
+        transform: translate(-42%, -50%) rotate(270deg);
+
+        transition: .4s ease;
+
+        svg {
+            animation: back__to__top 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes back__to__top {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(2px);
+            }
+        }
+    }
+
+    &:hover {
+        .arrow-svg {
+            transform: translate(-42%, -53%) rotate(270deg);
+            svg {
+                animation: unset;
+            }
+        }
+    }
+
+    &:hover,
+    &:focus {
+    filter: brightness(1.1);
+    outline: none;
+}
+}

@@ -4,21 +4,18 @@
 ******************************/
 $(document).ready(function() {
     $('.read__more').click(function(event) {
-        $('body , .overlay , .modal__window').toggleClass('active');
+        $('body , .overlay , .modal__window , .button__to__top').toggleClass('active');
     });
-  });
-  
-  $(document).ready(function() {
+
     $('.close__modal__window , .close__popup').click(function(event) {
-        $(' body , .overlay , .bg__team , .modal__window , .close__modal__window').removeClass('active');
-    });
+      $(' body , .overlay , .bg__team , .modal__window , .close__modal__window , .button__to__top').removeClass('active');
+  });
+
+  $('.overlay').click(function(event) {
+    $(' body , .overlay  , .modal__window , .close__modal__window , .button__to__top').removeClass('active');
+  });
   });
   
-  $(document).ready(function() {
-    $('.overlay').click(function(event) {
-        $(' body , .overlay  , .modal__window , .close__modal__window').removeClass('active');
-    });
-  });
 
   (function($){
    $(window).on("load",function(){

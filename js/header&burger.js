@@ -18,11 +18,11 @@ document.onscroll = function () {
 ******************************/
 $(document).ready(function() {
     $('.burger').click(function(event) {
-        $('.burger, body , .header__menu__nav , .bg__header , .nav__menu').toggleClass('open');
+        $('.burger, body , .header__menu__nav , .bg__header , .nav__menu , .button__to__top').toggleClass('open active');
     });
 
     $('.nav__menu').click(function(event) {
-        $('.burger, body , .header__menu__nav , .bg__header , .nav__menu').removeClass('open');
+        $('.burger, body , .header__menu__nav , .bg__header , .nav__menu , .button__to__top').removeClass('open active');
     });
 });
 
