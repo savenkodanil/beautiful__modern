@@ -19,22 +19,21 @@
         }
     
         .svg__triangle {
-            transform: rotate(-15deg);
             display: inline-block;
             
             svg {
                 &:nth-child(1) {
                     position: absolute;
-                    top: 362px;
-                    left: -44px;
-                   
+                    bottom: 90px;
+                    left: 148px;
+                    transform: rotate(-15deg);
                 }
 
                 &:nth-child(2) {
                     position: absolute;
-                    top: 163px;
-                    left: 1374px;
-                   
+                    top: 128px;
+                    right: 266px;
+                    transform: rotate(-15deg);
                 }
             }
         }
@@ -68,13 +67,18 @@
                 }
             }
 
+            .slider {
+                width: 1339px;
+                position: relative;
+            }
+
             .swiper-pagination {
                 background: #676767;
                 width: 1028px;
                 bottom: 141px;
-                top: unset;
-                right: 353px;
-                left: unset;
+                top: 420px;
+                right: 0;
+                
                 height: 1px;
 
                 .swiper-pagination-progressbar-fill {
@@ -95,8 +99,8 @@
                 width: 50px;
                 height: 50px;
                 background: url(/img/team/right.svg) no-repeat center;
-                top: 837px;
-                right: 54px;
+                top: 420px;
+                right: 13px;
                 transition: .3s ease;
 
                 &:hover {
@@ -117,8 +121,8 @@
                 width: 50px;
                 height: 50px;
                 background: url(/img/team/left.svg) no-repeat center;
-                top: 837px;
-                right: 125px;
+                top: 420px;
+                right: 87px;
                 left: unset;
                 transition: .3s ease;
                 &:hover {
@@ -140,6 +144,264 @@
             top: 0;
             background: linear-gradient(90deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 107.87%);
             z-index: -1;
+        }
+    }
+}
+
+@media(max-width:1779px) {
+    .block__our__team {
+        .wrapper__our__team {
+            margin: 0 20px;
+
+            .svg__triangle {
+                svg {
+                    &:nth-child(1) {
+                        bottom: 12px;
+                        left: 272px;
+                        height: 125px;
+                        width: 125px;
+                    }
+                }
+            }
+
+            .about__and__slider {
+                flex-direction: column;
+
+                .about {
+                    .bottom__text {
+                        max-width: 1323px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1380px) {
+    .block__our__team {
+        .wrapper__our__team {
+
+            .header__text {
+                margin-bottom: 90px;
+            }
+            .bg__our__team {
+                display: none;
+            }
+           
+            .svg__triangle {
+                svg {
+                    &:nth-child(1) {
+                        bottom: 12px;
+                        left: 272px;
+                        height: 125px;
+                        width: 125px;
+                    }
+                }
+            }
+
+            .about__and__slider {
+                align-items: center;
+                .swiper-pagination {
+                    width: 656px;
+                }
+
+                .swiper-button-prev {
+                    right: 105px;
+                }
+
+                .swiper-button-next {
+                    right: 28px;
+                }
+
+                .slider {
+                    width: 924px;
+                }
+
+                .about {
+                    .bottom__text {
+                        max-width: 922px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:960px) {
+    .block__our__team {
+        .wrapper__our__team {   
+            .svg__triangle {
+                svg {
+                    &:nth-child(1) {
+                        bottom: 12px;
+                        left: 272px;
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+            }
+
+            .about__and__slider {
+                align-items: center;
+                .swiper-pagination {
+                    width: 100%;
+                    top: 437px;
+                }
+
+                .swiper-button-prev {
+                    right: 52%;
+                    top: 387px;
+                }
+
+                .swiper-button-next {
+                    right: 34%;
+                    top: 387px;
+                }
+
+                .slider {
+                    width: 430px;
+                }
+
+                .about {
+                    .bottom__text {
+                        max-width: 430px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:470px) {
+    .block__our__team {
+        padding: 50px 0 100px 0;
+        .wrapper__our__team {
+            .header__text {
+                font-size: 2rem;
+                margin-bottom: 0px;
+            }   
+
+            .svg__triangle {
+                svg {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        top: 85px;
+                        right: 61px;
+                        width: 63px;
+                        height: 63px;
+                    }
+                }
+            }
+
+            .about__and__slider {
+                align-items: center;
+                .swiper-pagination {
+                    width: 100%;
+                    top: 340px;
+                }
+
+                .swiper-button-prev {
+                    display: none;
+                }
+
+                .swiper-button-next {
+                    display: none;
+                }
+
+                .slider {
+                    width: 365px;
+
+                    .swiper {
+                        .swiper-slide {
+                            img {
+                                width: 365px;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+
+                .about {
+                    .bottom__text {
+                        max-width: 100%;
+                        font-size: 1.25rem;
+                    }
+
+                    .top__text {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .block__our__team {
+        padding: 50px 0 100px 0;
+        .wrapper__our__team {
+            .header__text {
+                font-size: 1.5rem;
+                margin-bottom: 0px;
+            }   
+
+            .svg__triangle {
+                svg {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        top: 85px;
+                        right: 61px;
+                        width: 63px;
+                        height: 63px;
+                    }
+                }
+            }
+
+            .about__and__slider {
+                align-items: center;
+                .swiper-pagination {
+                    width: 100%;
+                    top: 310px;
+                }
+
+                .swiper-button-prev {
+                    display: none;
+                }
+
+                .swiper-button-next {
+                    display: none;
+                }
+
+                .slider {
+                    width: 335px;
+
+                    .swiper {
+                        .swiper-slide {
+                            img {
+                                width: 335px;
+                                height: 268px;
+                            }
+                        }
+                    }
+                }
+
+                .about {
+                    .bottom__text {
+                        max-width: 100%;
+                        font-size: 1rem;
+                    }
+
+                    .top__text {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
         }
     }
 }
