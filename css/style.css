@@ -1851,6 +1851,12 @@ body.active {
   top: -14px;
   -webkit-box-shadow: 0px 5px 12px -8px #000000;
           box-shadow: 0px 5px 12px -8px #000000;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.popup-bg .modal__window .close__modal__window:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .popup-bg .modal__window .close__modal__window span::before {
   content: "";
@@ -2228,8 +2234,15 @@ body.active {
 }
 .bg__contact__us .wrapper__contact__us .block__input .input .input__name input {
   all: unset;
-  width: 100%;
+  width: 91%;
   padding: 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 7px;
+}
+.bg__contact__us .wrapper__contact__us .block__input .input .input__name input:focus {
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
 }
 .bg__contact__us .wrapper__contact__us .block__input .input .input__name input::-webkit-input-placeholder {
   font-weight: 300;
@@ -2270,8 +2283,15 @@ body.active {
 }
 .bg__contact__us .wrapper__contact__us .block__input .input .input__email input {
   all: unset;
-  width: 100%;
+  width: 91%;
   padding: 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 7px;
+}
+.bg__contact__us .wrapper__contact__us .block__input .input .input__email input:focus {
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
 }
 .bg__contact__us .wrapper__contact__us .block__input .input .input__email input::-webkit-input-placeholder {
   font-weight: 300;
@@ -2312,8 +2332,15 @@ body.active {
 }
 .bg__contact__us .wrapper__contact__us .block__input .input .input__number input {
   all: unset;
-  width: 100%;
+  width: 91%;
   padding: 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 7px;
+}
+.bg__contact__us .wrapper__contact__us .block__input .input .input__number input:focus {
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
 }
 .bg__contact__us .wrapper__contact__us .block__input .input .input__number input::-webkit-input-placeholder {
   font-weight: 300;
@@ -2399,6 +2426,13 @@ body.active {
   all: unset;
   width: 91%;
   padding: 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 7px;
+}
+.bg__contact__us .wrapper__contact__us .block__input .input .input__job input:focus {
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
 }
 .bg__contact__us .wrapper__contact__us .block__input .input .input__job input::-webkit-input-placeholder {
   font-weight: 300;
@@ -2444,6 +2478,13 @@ body.active {
   color: #000000;
   resize: none;
   outline: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 7px;
+}
+.bg__contact__us .wrapper__contact__us .block__input .text__area textarea:focus {
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
 }
 .bg__contact__us .wrapper__contact__us .block__input .text__area textarea::-webkit-input-placeholder {
   font-weight: 300;
