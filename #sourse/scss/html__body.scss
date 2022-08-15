@@ -1,3 +1,6 @@
+:root {
+  scrollbar-gutter: stable;
+}
 
 *,*::before,*::after{
     margin: 0;
@@ -5,7 +8,7 @@
     border: 0;
     box-sizing: border-box;
 
-    font-family: 'Ubuntu ',  sans-serif;;
+    font-family: 'Ubuntu ', sans-serif;;
     font-style: normal;
     
     font-size: 16px;
@@ -17,29 +20,3 @@ a {
     text-decoration: none;
     color: #000;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
-
-@font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 300;
-    src: url(/beautiful__modern/fonts/Ubuntu-Light.ttf) format('truetype');
-    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
- }
-
- @font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    src: url(/beautiful__modern/fonts/Ubuntu-Regular.ttf) format('truetype');
-    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
- }
-
- @font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 700;
-    src: url(/beautiful__modern/fonts/Ubuntu-Bold.ttf) format('truetype');
-    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
- }
